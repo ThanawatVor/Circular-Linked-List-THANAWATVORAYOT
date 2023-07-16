@@ -1,12 +1,10 @@
-// Fig. 12.3: fig12_03.c
-// Inserting and deleting nodes in a list
 #include <iostream>
 using namespace std;
 #include "ll.h"
 
 void instructions( void );
 
-int main( void )
+int main()
 { 
    LL l; // initially there are no nodes
    unsigned int choice; // user's choice
@@ -26,7 +24,6 @@ int main( void )
             l.insert( item ); // insert item in list
             l.printList();//print the list out
             l.printListR();
-        
             break;
          case 2: // delete an element
             // if list is not empty
@@ -38,7 +35,7 @@ int main( void )
                if ( item==l.deletes( item ) ) { // remove item
                 // cout<<item << " deleted.\n";
                   l.printList( );
-                 l.printListR();
+                  l.printListR();
                } // end if
                else {
                   cout<<item<<" not found.\n\n";
