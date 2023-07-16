@@ -6,6 +6,7 @@ private:
 
   Node *nextPtr;
   Node *pPtr; // for doubly linked list
+
 public:
   Node(int x = 0);
   ~Node();
